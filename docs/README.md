@@ -1,6 +1,6 @@
 # Lightning Adoption Workshop
 
-Exercise 1 – Styling a Visualforce page for Lightning Experience
+## Exercise 1 – Styling a Visualforce page for Lightning Experience
 
 ### Exercise Goals
 * Understand how to quickly add the Lightning look and feel to an existing Visualforce page
