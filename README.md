@@ -1,7 +1,7 @@
 # Lightning Adoption Workshop
 ## Exercise 1 – Styling a Visualforce page for Lightning Experience
-### Exercise Goals
 
+### Exercise Goals
 * Understand how to quickly add the Lightning look and feel to an existing Visualforce page
 * Create a custom, scoped version of the Salesforce Lightning Design System (SLDS)
 * Add your custom SLDS files as a static resource
