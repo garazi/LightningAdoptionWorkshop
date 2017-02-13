@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+# Lightning Adoption Workshop
 
-You can use the [editor on GitHub](https://github.com/garazi/LightningAdoptionWorkshop/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+##Exercise 1 – Styling a Visualforce page for Lightning Experience
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+###Exercise Goals
 
-### Markdown
+* Understand how to quickly add the Lightning look and feel to an existing Visualforce page
+* Create a custom, scoped version of the Salesforce Lightning Design System (SLDS)
+* Add your custom SLDS files as a static resource
+* Create a custom JavaScript file to add SLDS styles to the page
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+###Step 1 - Add the Salesforce Lightning Design System CSS
+1. Continue working with the SampleVF.vfp page from Exercise 1.
+2. Add a directive to include the CSS from SLDS in the page by adding a new line after the opening `<apex:page>` tag:
 
-```markdown
-Syntax highlighted code block
+		<apex:slds />
+		
+3. Wrap the `<apex:form>` tag with a `<div>` with a class of **slds-scope**:
 
-# Header 1
-## Header 2
-### Header 3
+		<div class="slds-scope"> ... </div>
+		
+3. Add the following to the `<apex:page>` tag:
 
-- Bulleted
-- List
+		standardStylesheets="false" applyBodyTag="false"
 
-1. Numbered
-2. List
+###Step 2 - Add a custom JavaScript as a static resource
+1. Save [**vflex.js**](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-2/Snippets/vflex.js) to your computer.
+2. In Setup Home, navigate to the Static Resources section.
+3. Click the **New** button to create a new static resource.
+4. Give the resource a name of **vflex**.
+5. Upload the **vflex.js** file that you saved.
 
-**Bold** and _Italic_ and `Code` text
+###Step 3 - Add a reference to the custom JavaScript to the Visualforce page
+1. Add a `<script>` tag to reference vflex.js as a static resource.
+		
+		<script src="{!URLFOR($Resource.vflex)}"></script>
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/garazi/LightningAdoptionWorkshop/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+2. Add `oncomplete="init();"` to the `<apex:actionSupport>` tag.
+3. Save the page.
+4. Refresh the custom Contact List page in your org.
+		
