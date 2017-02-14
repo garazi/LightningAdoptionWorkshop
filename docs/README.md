@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-# Lightning Adoption Workshop
-
->>>>>>> 3860ad43b9712a5619fcb7ed43a9b9c98a72e7ca
 ## Exercise 1 – Styling a Visualforce page for Lightning Experience
 
 ### Exercise Goals
