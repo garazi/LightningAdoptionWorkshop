@@ -50,4 +50,4 @@
 3. Save the page.
 4. Refresh the custom Contact List page in your org.
 		
-### Move on to the [next Exercise](https://github.com/garazi/LightningAdoptionWorkshop/docs/Exercise_2.md)
+### Move on to the [next Exercise](Exercise_2.md)
