@@ -1,6 +1,6 @@
 ##Exercise 2 – Modifying the Visualforce Markup for Lightning Experience
 
-#### [<<< Back](Readme.md)
+#### [<<< Back](README.md)
 
 ###Exercise Goals
 
