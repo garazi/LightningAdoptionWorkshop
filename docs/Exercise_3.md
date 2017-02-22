@@ -45,7 +45,8 @@
 
 ###Step 4 - Modify the markup to match SLDS
 1. This step is on your own, since you've just done it in Exercise 2.
+2. Modify the page to deliver SLDS markup
 
 ###Solution - No Cheating!
-1. If you are unsuccessful, no worries, simply copy THIS FILE
+1. If you are unsuccessful, no worries, simply copy [THIS FILE](https://raw.githubusercontent.com/garazi/LightningAdoptionWorkshop/master/Exercise_3/src/pages/Similar_Properties.page)
 2. Replace the contents of the **SimilarProperties** in the Dev Console with the code you've just copied.
