@@ -81,7 +81,7 @@
         		component.set("v.greeting", newGreeting);
 			}
 		})
-		```
+	```
 		
 6. Save all the files.
 7. Refresh the Property page.
