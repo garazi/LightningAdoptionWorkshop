@@ -1,0 +1,15 @@
+<apex:page standardController="Property__c" extensions="GetPropertiesApexController" standardStylesheets="false" applyBodyTag="false">
+  <apex:slds />
+  <div class="slds-scope">
+  <apex:pageBlock >
+  <apex:pageBlockTable value="{! properties }" var="ct" id="leads_list" styleClass="slds-table slds-table--bordered slds-table--cell-buffer">
+        <apex:column value="{! ct.name}" />
+        <apex:column value="{! ct.beds__c}" />
+        <apex:column value="{! ct.baths__c}" />
+        <apex:column value="{! ct.broker__c}" />
+        <apex:column value="{! ct.price__c}" />
+        <apex:column value="{! ct.status__c}" />
+    </apex:pageBlockTable>
+    </apex:pageBlock>
+    </div>
+</apex:page>
