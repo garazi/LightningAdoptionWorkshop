@@ -50,4 +50,4 @@
 3. Save the page.
 4. Refresh the custom Contact List page in your org.
 		
-### Move on to the [next Exercise](Exercise_2.md)
+##### On to [Exercise 2](Exercise_2.md)
