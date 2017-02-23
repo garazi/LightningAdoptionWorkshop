@@ -85,3 +85,5 @@
 		
 6. Save all the files.
 7. Refresh the Property page.
+
+#####On to **[Exercise 5](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_5.md)**

@@ -5,21 +5,7 @@
 * Modifying a Lightning Experience Record Home Page with App Builder
 * Adding a Visualforce page to an existing Lightning Record Home page
 
-###Step 1 - Add a custom Visualforce page to a Standard Page Layout
-
-1. Click the Setup menu and choose **Setup Home**.
-2. In the left column, choose **Objects and Fields > Object Manager**.
-3. Click Property.
-4. Scroll down to the **Page Layouts** section and click **Propery Layout**.
-5. In the **Property Layout** box at the top of the page, click **Visualforce Pages**.
-6. Drag a new Section into the **Property Details** section and place it under the **Pictures** section.
-7. Give the new section a name of **Similar Properties**, and choose a single column layout.
-8. Click OK.
-9. Drag the **SimilarProperties** tile from the **Property Layout** box and place it in the new section.
-10. Click Save.
-11. Navigate back to a Property Detail page in your org. Scroll down to see the Visualforce page in the new Similar Properties section.
-
-###Step 2 - Make a Visualforce page available as a Lightning Component
+###Step 1 - Make a Visualforce page available as a Lightning Component
 1. Click the Setup menu and choose **Setup Home**.
 2. In the Quick Find, type "visualforce".
 3. Click **Visualforce Pages**.
@@ -50,3 +36,6 @@
 ###Solution - No Cheating!
 1. If you are unsuccessful, no worries, simply copy [THIS FILE](https://raw.githubusercontent.com/garazi/LightningAdoptionWorkshop/master/Exercise_3/src/pages/Similar_Properties.page)
 2. Replace the contents of the **SimilarProperties** in the Dev Console with the code you've just copied.
+
+
+#####On to **[Exercise 4](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_4.md)**

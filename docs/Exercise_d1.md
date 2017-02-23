@@ -1,4 +1,4 @@
-## Exercise 1: Setup your Salesforce org and Install “Classic” app:
+## Exercise 1: Setup your Salesforce Org
 
 Using clicks, we will enable your org for Lightning and go through the phases of making a Classic Custom App available to your Lightning Users. In these exercises you will learn core Lighting features for your end users, Lightning App development, Record and Home page customizations, standard component usage, and how to assign experiences based on app and profile. 
 
@@ -19,3 +19,6 @@ Using clicks, we will enable your org for Lightning and go through the phases of
     5. You receive an email when your domain name is ready for testing. It can take a few minutes.
     6. The new subdomain is available after you **test** and **deploy** it.
 3. Download clipart image for App logo [https://en.wikipedia.org/wiki/File:Human-go-home.svg](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjU9f3W46TSAhUC12MKHVNZAFEQjRwIBw&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFile%3AHuman-go-home.svg&psig=AFQjCNHZTidjLtzKbVqEq_7zdzS_5Hr4Ew&ust=1487889819345529)
+
+
+##### On to **[Exercise 2](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d2.md)** 

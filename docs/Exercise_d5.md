@@ -68,3 +68,4 @@ Now that we have created our new Lightning Console App, lets take a look at our 
 Great Job! With clicks you went through the major phases of bringing a Classic App to Lightning Experience. Enabling an existing app and user for Lightning, creating a new Lightning App complete with features like Utility Bar, and assigning a customized record page experience to Lightning Apps. 
 
 
+#####On to **[Exercise 1](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_1.md)** of the programmatic exercises
