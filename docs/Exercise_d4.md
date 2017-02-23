@@ -29,3 +29,6 @@ We have  business processes defined for our Property listings, and the Property 
         2. Select Chart Icon to display Report Chart
         3. Edit Chart to Display As:  Scatter Chart
         4. Save 
+
+
+##### On to **[Exercise 5](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d5.md)** 
