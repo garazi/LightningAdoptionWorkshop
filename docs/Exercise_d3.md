@@ -1,7 +1,7 @@
 ## Exercise 3:  Make your Classic App available in Lightning & Explore Lightning Experience
 
 
-Lightning is enabled in your environment!  Time to make your custom app, Dreamhouse Classic, available to your Lightning users.  If you are just getting started with Lightning and want to explore what your Classic App will look like, we will do this with just a few clicks. However, while this is a fast and easy way to make your Classic App visible in Lightning, it will still have some limitations. Later on we will finish our Lightning migration by creating a brand new Lightning App for Dreamhous. 
+Lightning is enabled in your environment!  Time to make your custom app, Dreamhouse Classic, available to your Lightning users.  If you are just getting started with Lightning and want to explore what your Classic App will look like, we will do this with just a few clicks. However, while this is a fast and easy way to make your Classic App visible in Lightning, it will still have some limitations. Later on we will finish our Lightning migration by creating a brand new Lightning App for Dreamhouse. 
 
 1. First, switch to Lightning Experience for yourself so you can start exploring and building.
     1. Your profile drop down at top right of page | **Switch to Lightning Experience**
