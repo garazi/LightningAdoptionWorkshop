@@ -23,3 +23,5 @@
 **[Exercise 4](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_4.md)** - Creating a "Hello World" Lightning Component
 
 **[Exercise 5](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_5.md)** - Creating a "Similar Properties" Lightning Component
+
+**[Exercise 6](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_6.md)** - Using Lightning Components Everywhere
