@@ -10,7 +10,7 @@
 
 ###Step 1 - Add Conditional Logic to the page
 
-1. In the Developer Console, open the Leads page from the previous exercise if it is not already open, then remove the `<script src="{!URLFOR($Resource.vflex)}"></script>` from the page.
+1. In the Developer Console, open the Leads page from the previous exercise if it is not already open.
 2. Add a new line after the opening `<apex:page>` tag, and add the following:
 
 		<apex:variable var="lightningDesktop" value="{! $User.UIThemeDisplayed == 'Theme4d'}" />
