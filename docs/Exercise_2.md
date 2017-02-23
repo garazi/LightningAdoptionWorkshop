@@ -159,4 +159,4 @@
 11. Switch back to Lightning.
 
 
-### On to **[Exercise 3](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_3.md)**
+##### On to **[Exercise 3](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_3.md)**
