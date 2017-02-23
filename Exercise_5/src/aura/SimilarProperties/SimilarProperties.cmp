@@ -2,7 +2,13 @@
     <aura:attribute name="recordId" type="Id" />
     <aura:attribute name="similarProperties" type="Object[]" />
     <aura:attribute name="searchCriteria" type="String" />
+    <aura:attribute name="property" type="Property__c" />
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <force:recordPreview aura:id="propertyService"
+                     recordId="{!v.recordId}"
+                     targetRecord="{!v.property}"
+                     recordUpdated="{!c.doSearch}"
+                     layoutType="FULL" />   
     <lightning:card iconName="custom:custom85" title="Similar Properties">
         <div class="slds-p-left--medium slds-p-right--medium">
             <ul class="slds-list--vertical slds-has-dividers--top-space">

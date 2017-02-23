@@ -235,5 +235,125 @@
 9. Notice the icon for your component and it's name now contains a space (this is the label from the design file.
 10. Drag the component back into the right-hand column.
 11. Notice the right-hand column now contains design parameters for the search criteria.
-12. Switch the search criteria to **Price** and notice that the component immediately changes.
+12. Switch the search criteria to **Price** and notice that nothing happens. That's because we now need to update our component and Apex Class to handle the switch of criteria.
 13. Click Save, then navigate back to the Property Record Detail page.
+
+###Step 11 - Updating the Controllers
+1. Switch back to the Dev Console and open the **SimilarProperties** controller.
+2. Add the following after the `var recId` line of code:
+
+	```js
+	var compValue = component.get("v.searchCriteria");	
+	```
+	
+3. Pass the variable to the action by updating the action's parameters to:
+
+	```js
+	action.setParams({
+        recordId: recId,
+        searchCriteria: compValue
+    });
+	```
+	
+4. Save the file(s).
+5. Open the **GetSimilarPropertiesApexController** file in the Dev Console if it is not already open (File > Open Resource).
+6. Update the contents to the following:
+
+	```java
+	public class GetSimilarPropertiesApexController {
+	    @AuraEnabled
+	    public static List<Property__c> getSimilarProperties (Id recordId, String searchCriteria) {
+	        if (searchCriteria == 'Beds') {
+	            List<Property__c> beds = [
+	                SELECT Beds__c FROM Property__c WHERE Id=:recordId
+	            ];
+	            List<Property__c> properties = getThePropertiesByBeds(recordId, beds[0].Beds__c);
+	            return properties;
+	        } else {
+	            List<Property__c> price = [
+	                SELECT Price__c FROM Property__c WHERE Id=:recordId
+	            ];
+	            List<Property__c> properties = getThePropertiesByPrice(recordId, price[0].Price__c);
+	            return properties;
+	        }
+	    }
+	    
+	    private static List<Property__c> getThePropertiesByBeds (Id myProp, Decimal beds) {
+	        List<Property__c> properties = [
+	            SELECT Id, Name, Beds__c, Baths__c, Price__c, Broker__c, Status__c, Thumbnail__c FROM Property__c WHERE Id != :myProp AND Beds__c = :beds
+	        ];
+	        return properties;
+	    }
+	    
+	    private static List<Property__c> getThePropertiesByPrice (Id myProp, Decimal price) {
+	        List<Property__c> properties = [
+	            SELECT Id, Name, Beds__c, Baths__c, Price__c, Broker__c, Status__c, Thumbnail__c FROM Property__c WHERE Id != :myProp AND Price__c < :price + 100000 AND Price__c > :price - 100000
+	        ];
+	        return properties;
+	    }
+	}
+	```
+	
+7. Save the file.
+8. Refresh the Property Record Detail page. Notice the properties change. 
+
+###Step 12 - Leverage force:recordPreview
+1. In the Developer Console, switch to SimilarProperties component.
+2. Add a new `<aura:attribute>`:
+
+	```html
+	<aura:attribute name="property" type="Property__c" />
+	```
+3. Add the following below the `<aura:handler>`:
+
+	```html
+	<force:recordPreview aura:id="propertyService"
+                 recordId="{!v.recordId}"
+                 targetRecord="{!v.property}"
+                 recordUpdated="{!c.doSearch}"
+                 layoutType="FULL" /> 
+	```
+
+4. Save the file.
+5. Click on the Helper tile on the right-hand side of the Developer Console.
+6. Select all and delete the default contents of the Helper.
+7. Paste the following into the helper:
+
+	```js
+	({
+		getProps : function(component) {
+			var recId = component.get("v.recordId");
+	        var compValue = component.get("v.searchCriteria");
+	        var action = component.get("c.getSimilarProperties");
+	        action.setParams({
+	            recordId: recId,
+	            searchCriteria: compValue
+	        });
+	        action.setCallback(this, function(response){
+	            var res = response.getReturnValue();
+	            component.set("v.similarProperties", res);
+	        });
+	        $A.enqueueAction(action);
+		}
+	})
+	```
+
+8. Switch to the SimilarProperties controller tab.
+9. Replace the contents of the **doInit** function with:
+
+	```js
+		helper.getProps(component);
+	```
+
+10. Add a new function **doSearch** to the controller (remember the commas to seperate the functions):
+
+	```js
+	doSearch : function (component, event, helper) {
+        helper.getProps(component);
+    }
+	```
+	
+11. Save the file.
+12. Reload the Property Record Detail page.
+13. Change the Price of the record to be +/- more than 100000.
+14. Click Save and watch the Similar Properties component update.
