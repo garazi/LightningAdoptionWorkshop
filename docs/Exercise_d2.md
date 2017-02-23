@@ -28,7 +28,7 @@
                     1. User | Randy Realtor | Permission Set Assignments | Edit Assignment | Move **Lightning Experience User** to the Enabled Permission Sets column | Save 
     4. Now that you have reviewed access, it is time to enable Lightning and some Lightning related features. 
         1. Setup | Lightning Experience | Notes | Click the **Disabled** button to Enable Notes
-        2. Setup | Lightning Experience | News | Click the Disabled button to Enable this feature. 
+        2. Setup | Lightning Experience | News | Click the **Disabled** button to Enable this feature. 
         3. Setup | Lightning Experience | Lightning Experience | Click the **Disabled** button | Finish Enabling Lightning Experience 
 
 
