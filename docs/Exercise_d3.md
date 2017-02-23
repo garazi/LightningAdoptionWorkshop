@@ -52,3 +52,6 @@ Now with just a few clicks you have made your Classic App visible in Lightning, 
     3. Select Options arrow for your new **Top Listings** Calendar and select a new custom color from the palette 
     4. In the top right of your calendar tab, change the Calendar date range view from Week to  **Month**
     5. Favorite this tab.
+
+
+##### On to **[Exercise 4](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d4.md)** 
