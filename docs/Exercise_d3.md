@@ -31,7 +31,7 @@ Now with just a few clicks you have made your Classic App visible in Lightning, 
     3. Select **Done**.
 5. The Navigation bar and List Views in Lightning have new features to explore as well
     1. Select the **V** on the Properties tab. On the drop down you now can create new records, view favorites for this object, or select a list view. 
-    2. Click on **Top Listings **List View
+    2. Click on **Top Listings** List View
     3. Edit some property records from your list view, you can also try editing list view records without your mouse using your arrow keys + Enter.
     4. In Lightning, your users also have new ways to access records and visualize the records in a List View. Let's take a look. 
         1. Chart Icon | New Chart | Create a new chart for your list view, make the values whatever you would like
