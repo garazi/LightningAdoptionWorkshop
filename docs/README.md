@@ -4,11 +4,11 @@
 
 **[Exercise 1](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d1.md)** - Setup your Salesforce Org
 
-**[Exercise 2](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d1.md)** - Evaluate Lightning, Create Permission Set & Enable Lightning
+**[Exercise 2](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d2.md)** - Evaluate Lightning, Create Permission Set & Enable Lightning
 
-**[Exercise 3](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d1.md)** - Make your Classic App available in Lightning & Explore Lightning Experience
+**[Exercise 3](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d3.md)** - Make your Classic App available in Lightning & Explore Lightning Experience
 
-**[Exercise 4](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d1.md)** - Customize Business Processes and Report Charts
+**[Exercise 4](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d4.md)** - Customize Business Processes and Report Charts
 
 **[Exercise 5](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d5.md)** - Create new Dreamhouse Lightning Console App
 
