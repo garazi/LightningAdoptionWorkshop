@@ -157,3 +157,6 @@
 9. Save the page and reload the page in your org.
 10. Switch to Salesforce Classic to see the page rendered with the Classic styling.
 11. Switch back to Lightning.
+
+
+### On to **[Exercise 3](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_3.md)**
