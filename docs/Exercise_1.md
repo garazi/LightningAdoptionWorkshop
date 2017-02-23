@@ -30,18 +30,15 @@
 		standardStylesheets="false" applyBodyTag="false"
 		
 4. Save the page, and refresh it in the browser.
-		
-### Step 3 - Add stylesheets to the markup
-1. 
 
-### Step 2 - Add a custom JavaScript as a static resource
+### Step 3 - Add a custom JavaScript as a static resource
 1. Save [**vflex.js**](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-2/Snippets/vflex.js) to your computer.
 2. In Setup Home, navigate to the Static Resources section.
 3. Click the **New** button to create a new static resource.
 4. Give the resource a name of **vflex**.
 5. Upload the **vflex.js** file that you saved.
 
-### Step 3 - Add a reference to the custom JavaScript to the Visualforce page
+### Step 4 - Add a reference to the custom JavaScript to the Visualforce page
 1. Add a `<script>` tag to reference vflex.js as a static resource.
 		
 		<script src="{!URLFOR($Resource.vflex)}"></script>
