@@ -2,7 +2,7 @@
 
 ##Declarative Exercises
 
-**[Exercise 1](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d1.md)** - Setup your Salesforce org and Install “Classic” app
+**[Exercise 1](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d1.md)** - Setup your Salesforce Org
 
 **[Exercise 2](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d1.md)** - Evaluate Lightning, Create Permission Set & Enable Lightning
 
