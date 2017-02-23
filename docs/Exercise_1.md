@@ -2,9 +2,7 @@
 
 ### Exercise Goals
 * Understand how to quickly add the Lightning look and feel to an existing Visualforce page
-* Create a custom, scoped version of the Salesforce Lightning Design System (SLDS)
-* Add your custom SLDS files as a static resource
-* Create a custom JavaScript file to add SLDS styles to the page
+* Add SLDS styles to the page
 
 ### Step 1 - Examine the Visualforce markup
 1. Click on the Setup icon and open the Developer Console.
