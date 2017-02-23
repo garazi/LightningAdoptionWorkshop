@@ -357,3 +357,5 @@
 12. Reload the Property Record Detail page.
 13. Change the Price of the record to be +/- more than 100000.
 14. Click Save and watch the Similar Properties component update.
+
+On to **[Exercise 6]**(https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_6.md)
