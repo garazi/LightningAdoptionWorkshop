@@ -23,7 +23,7 @@ Now with just a few clicks you have made your Classic App visible in Lightning, 
 3. Lightning has expanded Search functionality. Let's explore Global Search 
     1. Click Search Bar. In Lightning your recent items will now be accessible in a drop down from your global search bar. 
     2. Type “leads”.  You will see now see the option to Search the string “leads”, search within the tab you are currently on(Chatter), or to define your search to the Leads object. 
-    3. Select Limit **Search to Leads**. This limits your search to within the Leads object. Now type “Laura” and hit enter. 
+    3. Select **Limit search to Leads**. This limits your search to within the Leads object. Now type “Laura” and hit enter. 
     4. Click on the resulting Search Record, **Laura Croft**
 4. If you’re familiar with customizing tab sets in Salesforce Classic, you’ll like the way you can personalize your   navigation with favorites. Favorites let you quickly access important records, lists, groups, dashboards, and other frequently used pages in Salesforce. They’re similar to bookmarks in a web browser but better because your favorites are available no matter which browser or computer you use to log into Lightning Experience.
     1. While viewing the Lead record for Laura Croft **Select the star in the upper right of your Lightning view** to add the current record to your favorites list.
