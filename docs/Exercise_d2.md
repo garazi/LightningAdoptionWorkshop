@@ -33,3 +33,5 @@
 
 
 Your Org is now Lightning Enabled!
+
+##### On to **[Exercise 2](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d3.md)** 
