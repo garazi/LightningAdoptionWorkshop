@@ -7,10 +7,8 @@ Lightning is enabled in your environment!  Time to make your custom app, Dreamho
     1. Your profile drop down at top right of page | **Switch to Lightning Experience**
 2. Make your classic app visible in Lightning and add some additional tabs. 
     1. All Setup | Apps | App Manager | **Dreamhouse Classic** | Edit | Select the “Show in Lightning Experience” Checkbox.
-    2. In the Choose the Tabs box, select the **Chatter**, **Calendar**, **Dashboard** & **Notes** tabs and move to the Selected Tabs box. 
-    3. 
-    4. Add the Tabs for Dashboards, Reports, & Chatter to your Dreamhouse Classic App selected tabs. 
-    5. Save
+    2. In the Choose the Tabs box, select the **Chatter**, **Dashboard** & **Notes** tabs and move to the Selected Tabs box. 
+    3. Save.
 
 
 Now with just a few clicks you have made your Classic App visible in Lightning, let's take a look at what this app looks like in Lightning and explore some of the end user features in Lighting Experience. 
