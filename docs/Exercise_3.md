@@ -50,3 +50,6 @@
 ###Solution - No Cheating!
 1. If you are unsuccessful, no worries, simply copy [THIS FILE](https://raw.githubusercontent.com/garazi/LightningAdoptionWorkshop/master/Exercise_3/src/pages/Similar_Properties.page)
 2. Replace the contents of the **SimilarProperties** in the Dev Console with the code you've just copied.
+
+
+#####On to **[Exercise 4](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_4.md)**
