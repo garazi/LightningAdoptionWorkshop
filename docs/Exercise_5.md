@@ -94,7 +94,7 @@
 	```
 
 4. Save the Apex Class. 
-5. Switch back to the ContactList component and add `controller="GetSimilarPropertiesApexController"` to the `<aura:component>` in front of the `implements=` attribute.
+5. Switch back to the SimilarProperties component and add `controller="GetSimilarPropertiesApexController"` to the `<aura:component>` in front of the `implements=` attribute.
 6. Save the file.
 7. Go back to the Property Record Detail page and refresh to see data populating the component.
 
