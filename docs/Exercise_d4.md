@@ -25,7 +25,8 @@ We have  business processes defined for our Property listings, and the Property 
         2. Save
 2. Create a new Report Chart for Property data 
     1. Report Tab 
-        1. Open** Property Listings **Report
+        1. Select **All Reports**
+        1. Open **Property Listings** Report
         2. Select Chart Icon to display Report Chart
         3. Edit Chart to Display As:  Scatter Chart
         4. Save 
