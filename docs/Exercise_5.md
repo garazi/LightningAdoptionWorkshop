@@ -173,7 +173,7 @@
 6. Reload the Property Record Detail page, and click the edit icon in the component.
 
 ###Step 8 - Final Cosmetic Touches
-1. Wrap the entire `<ul>` with:
+1. Wrap the outermost `<ul>` with:
 
 ```html
 	<lightning:card iconName="custom:custom85" title="Similar Properties">
