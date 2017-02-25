@@ -3,13 +3,23 @@
     <aura:attribute name="similarProperties" type="Object[]" />
     <aura:attribute name="searchCriteria" type="String" />
     <aura:attribute name="property" type="Property__c" />
+    <aura:attribute name="selectedRecordId" type="Id" />
+    <aura:attribute name="selectedProperty" type="Property__c" />
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
     <force:recordPreview aura:id="propertyService"
-                     recordId="{!v.recordId}"
-                     targetRecord="{!v.property}"
-                     recordUpdated="{!c.doSearch}"
-                     layoutType="FULL" />   
-    <lightning:card iconName="custom:custom85" title="Similar Properties">
+                         recordId="{!v.recordId}"
+                         targetRecord="{!v.property}"
+                         recordUpdated="{!c.doSearch}"
+                         layoutType="FULL" />
+    
+    <force:recordPreview aura:id="editRecord"
+                         targetRecord="{!v.selectedProperty}"
+                         recordUpdated="{!c.doSearch}"
+                         layoutType="FULL"
+                         mode="EDIT" />
+    
+    <lightning:card iconName="custom:custom85" title="{! 'Similar Properties by ' + v.searchCriteria}">
         <div class="slds-p-left--medium slds-p-right--medium">
             <ul class="slds-list--vertical slds-has-dividers--top-space">
                 <aura:iteration items="{!v.similarProperties}" var="item" indexVar="i">
@@ -19,11 +29,11 @@
                                 <img src="{!item.Thumbnail__c}" class="slds-avatar--large slds-avatar--circle" alt="{!item.Title_c}" />
                             </div>
                             <div class="slds-media__body">
-                                <div class="slds-grid">
+                                <div class="slds-grid" >
                                     <a data-record="{!item.Id}" onclick="{!c.navToRecord}">
                                         <h3 class="slds-text-heading--small slds-m-bottom--xx-small">{!item.Name}</h3>
-                                    </a>                            
-                                    <lightning:buttonIcon iconName="utility:edit" class="slds-col--bump-left" variant="bare" alternativeText="Edit Record" onclick="{!c.editRecord}" value="{!item.Id}" />
+                                    </a>
+                                    <lightning:buttonIcon iconName="utility:edit" class="slds-col--bump-left" variant="bare" alternativeText="Edit Record" onclick="{!c.editMini}" value="{!item.Id}" />                            
                                 </div>
                                 <div class="slds-m-top--small">
                                     <ul class="slds-grid slds-wrap">
@@ -31,7 +41,7 @@
                                         <li class="slds-list__item slds-size--1-of-2"><span class="slds-text-color--weak slds-m-right--small">Baths:</span> {!item.Baths__c}</li>
                                         <li class="slds-list__item slds-size--1-of-2"><span class="slds-text-color--weak slds-m-right--small">Price:</span> {!item.Price__c}</li>
                                         <li class="slds-list__item slds-size--1-of-2"><span class="slds-text-color--weak slds-m-right--small">Status:</span> {!item.Status__c}</li>
-                                    </ul>                                
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -40,4 +50,27 @@
             </ul>
         </div>
     </lightning:card>
+    <div aura:id="editDialog" role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open slds-hide">
+        <div class="slds-modal__container">
+            <div class="slds-modal__header">
+                <button class="slds-button slds-modal__close " title="Close" onclick="{!c.closeButton}">
+                    <lightning:icon iconName="utility:close" variant="bare" ></lightning:icon>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 id="header43" class="slds-text-heading--medium">Edit Record</h2>
+            </div>
+            <div class="slds-modal__content slds-p-around--medium slds-grid slds-wrap slds-grid--align-spread">
+                <lightning:input aura:id="propName" name="propName" label="Property Name" required="true" value="{!v.selectedProperty.Name}" class="slds-size--1-of-1 slds-p-horizontal--x-small" />
+                <lightning:input aura:id="propBeds" name="propBeds" label="Beds" value="{!v.selectedProperty.Beds__c}" class="slds-size--1-of-2 slds-p-horizontal--x-small" />
+                <lightning:input aura:id="propBaths" name="propBaths" label="Baths" value="{!v.selectedProperty.Baths__c}" class="slds-size--1-of-2 slds-p-horizontal--x-small" />
+                <lightning:input aura:id="propPrice" name="propPrice" label="Price" value="{!v.selectedProperty.Price__c}" class="slds-size--1-of-2 slds-p-horizontal--x-small" />
+                <lightning:input aura:id="propStatus" name="propStatus" label="Status" value="{!v.selectedProperty.Status__c}" class="slds-size--1-of-2 slds-p-horizontal--x-small" />
+            </div>
+            <div class="slds-modal__footer">
+                <button class="slds-button slds-button--neutral" onclick="{!c.closeButton}">Cancel</button>
+                <button class="slds-button slds-button--brand" onclick="{!c.saveRecord}">Save</button>
+            </div>
+        </div>
+    </div>
+    <div aura:id="overlay" class="slds-backdrop slds-backdrop--open slds-hide"></div>
 </aura:component>
