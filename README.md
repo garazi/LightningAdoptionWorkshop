@@ -1,4 +1,4 @@
-# Lightning Now Hands On Exercises 
+# Lightning Adoption Hands-On Exercises 
 
 ## Pre-Work: Complete Trailhead Modules
 
