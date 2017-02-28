@@ -4,7 +4,7 @@
 
 Lightning is now enabled in your environment!  Time to make your custom app, Dreamhouse Classic, available to your Lightning users.  If you are just getting started with Lightning and want to explore what your Classic app will look like, we can do this with just a few clicks. However, while this is a fast and easy way to make your Classic app visible in Lightning, it will still have some limitations. Later on we'll finish our Lightning migration by creating a brand new Lightning app for Dreamhouse. 
 
-1. First, switch to Lightning Experience for yourself so you can start exploring and building. When you enable Lightning for yourself and your users, all users will still have the option to switch back and forth between Lightning and Classic experience from this drop down.  [http://g.recordit.co/aUP5TvAK70.gif](http://g.recordit.co/HmpxgPsOwJ.gif)
+1. First, switch to Lightning Experience for yourself so you can start exploring and building. When you enable Lightning for yourself and your users, all users will still have the option to switch back and forth between Lightning and Classic experience from this drop down.  ![screenshot](images/ex3.1.gif)
     1. Your profile drop down at top right of page | **Switch to Lightning Experience**
 2. Make your classic app visible in Lightning and add some additional tabs. This does not impact the app experience for our Classic users, but it makes the current Classic app visible to Lightning users in the App Launcher. Notice that there is also an option to “Upgrade” your custom app when you are in the App Manager. The upgrade option creates a new Lightning app clone of your Classic app. 
     1. All Setup (gear icon) | Apps | App Manager | **Dreamhouse Classic** | Edit | Select the “Show in Lightning Experience” Checkbox.
@@ -76,9 +76,7 @@ The Navigation bar and List Views in Lightning have new features to explore as w
 
 Now that we have added a new chart visualization for our list view, lets look at a new way for users to view and interact with the records with the **Kanban View**. The Kanban view displays a visual summary for a selection of records. By seeing all your records at once, users can more effectively monitor their work and keep business processes moving forward. Switch to the Kanban view for almost any object from the object’s list view. The Kanban view isn’t available on a few objects, such as knowledge and tasks and is also not available on the **Recently Viewed** list view for an object. 
 
-1. Select
-
-        1. [Image: https://salesforce.quip.com/-/blob/GUdAAAQMXbe/eY9jEOgGd9Rgs82TVe8c6w]
+1. Select the icon ![screenshot](images/ex3.2.png)
 1. Display As: **KanBan View**
     1. Play with the Kanban by dragging & dropping records to a different status. 
 
@@ -87,7 +85,7 @@ Now that we have added a new chart visualization for our list view, lets look at
 In Lightning anyone can create a calendar from a standard or custom object by choosing a date field representing data they want to track. The calendar displays data in that field as calendar items. Users can customize most calendars by applying a list view, and they can edit and delete calendars they’ve created.
 
 1. App Launcher | Calendar Tab (This can be found in the **All Items** area below the Lightning apps in your App Launcher or by searching in the App Launcher search window)
-2. Select the Gear Icon next to “My Calendars” for **New Calendar.  http://g.recordit.co/Pb3T6B9oW8.gif**
+2. Select the Gear Icon next to “My Calendars” for **New Calendar**. ![screenshot](images/ex3.3.gif)
     1. Object: Property 
     2. Next 
     3. Calendar Name: Top Listings 
