@@ -15,7 +15,7 @@
 5. Save the file.
 
 ###Step 2 - Add the component to a page
-1. Navigate to a Property page.
+1. Navigate to a Property Record Detail page.
 2. Choose **Edit Page** from the Setup menu.
 3. Locate your HelloWorld component in the Component List.
 4. Drag it onto the page and place it at the top of the right-hand column.
@@ -28,7 +28,7 @@
 		<aura:attribute name="greeting" type="String" default="World" />
     	Hello, {!v.greeting}!
 
-2. Save and reload the account page.
+2. Save the component and reload the Property Record Detail page.
 3. Add the following on a new line under the `<aura:attribute/>` tag:
 
 		<ui:inputText aura:id="userInput" change="{!c.updateGreeting}"></ui:inputText>

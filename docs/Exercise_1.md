@@ -11,7 +11,7 @@
 4. Notice this is a simple Visualforce page which displays a list of Leads.
 5. Using Chrome, navigate to the custom Leads page in your org.
 6. Right-click on the data table in the page and choose Inspect.
-7. Locate the `<table>` tag and notice it has a class of **list**.
+7. Locate the `<table>` tag and notice it has a class of **list**. Classes are CSS rules that define the look of the items on the page.
 
 ### Step 2 - Add the Salesforce Lightning Design System CSS
 1. Switch back to the Developer Console.
@@ -23,10 +23,11 @@
 
 		<div class="slds-scope"> ... </div>
 		
-3. Add the following to the `<apex:page>` tag:
+4. Add the following to the `<apex:page>` tag:
 
 		standardStylesheets="false" applyBodyTag="false"
 		
-4. Save the page, and refresh it in the browser.
+5. Add `styleClass="slds-table slds-table--bordered slds-table--cell-buffer"` to the `<apex:pageBlockTable>` tag. 
+6. Save the page, and refresh it in the browser. You can see that styles have begun to be applied from SLDS.
 		
 ##### On to [Exercise 2](Exercise_2.md)
