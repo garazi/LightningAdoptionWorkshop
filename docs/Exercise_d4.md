@@ -33,7 +33,7 @@ Path is a way to visually display the steps in a process, highlight key fields, 
 Create a new Report Chart for Property data. We have a report chart that is useful for our users, and we want to make some small edits to the chart so that we can make it available to our users in their new Lightning App. With the Report Chart standard lightning component we can display report charts in Lightning Record pages, Home pages, App pages, and even the Utility Bar.
 
 1. Report Tab | All Reports
-    1. Open** Property Listings **Report
+    1. Open **Property Listings** Report
     2. Edit Chart to Display As:  Scatter Chart
     3. Edit drop-down | Save
 
