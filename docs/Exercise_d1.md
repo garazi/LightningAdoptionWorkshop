@@ -2,9 +2,9 @@
 
 You will be using this environment in the workshop. My Domain must be deployed in your environment in order to complete the Programmatic exercises. 
 
-1. Sign up for Lightning Now Workshop environment **[LINK]**
+1. Sign up for Lightning Adoption Workshop environment **[LINK]**
 2. When you receive your Signup confirmation email, Login to your new org and set your password. 
-3. Define your Domain name in your Lightning Now Workshop Org
+3. Define your Domain name in your Lightning Adoption Workshop Org
 	1. From Setup, enter My Domain in the `Quick Find` box, then select **My Domain**.
    2. Enter the subdomain name you want to use within the sample URL. For example, if a company called Universal Containers uses the subdomain `universalcontainers`, the company’s login URL is `https://universalcontainers.my.salesforce.com/`. Your name can include up to 40 letters, numbers, and hyphens.
    You can’t use these reserved words for subdomains:
