@@ -8,7 +8,7 @@ Before we roll out Lightning for our end users and start building apps, let's ta
 1. Learn about Lightning, Enable Lightning for your org and define Lightning access for users 
     1. Preview what your org will look like in Lightning Experience
         1. Setup | Lightning Experience | Preview Your Org In Lightning Experience | **Preview** 
-        2. Click around your environment in Lightning Experience.Use this Lightning preview to see what your Salesforce apps will look like in Lighting. !(http://g.recordit.co/NUS9dJkOCe.gif)
+        2. Click around your environment in Lightning Experience.Use this Lightning preview to see what your Salesforce apps will look like in Lighting. ![screenshot](http://g.recordit.co/NUS9dJkOCe.gif)
             1.  Click on the **Opportunities tab**
             2. Select the **All Opportunities** list view, then click into the **Burlington Textiles Opportunity Record**
             3. Click around the opportunity  page a bit to explore the look and feel of Lightning, use the Sales Path to change the Opportunity Stage to Value Proposition 
