@@ -7,4 +7,4 @@
 
 This workshop is divided into two sections, Declarative and Programmatic. In order to complete the Programmatic section, you must first complete the Declarative exercises.
 
-[**Let's get started!**](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d1.md)
+[**Let's get started!**](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/README.md)
