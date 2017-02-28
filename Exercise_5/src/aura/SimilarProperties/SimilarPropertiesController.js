@@ -30,6 +30,9 @@
         tempRec.reloadRecord();
         helper.showHideModal(component);
     },
+    closeButton : function(component,event,helper) {
+        helper.showHideModal(component);
+    },
     saveRecord : function(component,event,helper) {
         var propName = component.find('propName').get("v.value");
         var propBeds = component.find('propBeds').get("v.value");
@@ -43,9 +46,6 @@
         tempRec.set("v.Name", propPrice);
         tempRec.set("v.Name", propStatus);
         tempRec.saveRecord();
-        helper.showHideModal(component);
-    },
-    closeButton : function(component,event,helper) {
         helper.showHideModal(component);
     }
 })
