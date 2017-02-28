@@ -33,12 +33,12 @@ Now that we've explored the Lightning look and feel, let's go ahead and grant ac
     3. Check box for: **Lightning Experience User**
     4. **Save**
 3. Now that you have created a Permission set, this is a good time to review who will have access to Lightning when you enable it!
-        1. Setup | Manage Users | Users | **Randy Realtor**
-            1. Your end user, Randy Realtor has the Dreamhouse User custom profile assigned. Take a look at the profile and check if it has Lightning Experience enabled. 
-            2. User detail page | Profile | **Dreamhouse User**
-            3. Scroll down the profile detail page to the administrative permissions section and notice that Lightning Experience is not checked. This means that when you enable Lightning Experience for your org, **Randy will only see the Lightning Experience if he is assigned a profile or permission set with the Lightning Experience permission enabled.**
-            4. Since Randy does not have access to Lightning with his custom profile, we can assign him the Lightning Experience permission set. This allows us to grant Randy access to Lightning in a controlled rollout without modifying his custom profile. This is layering the ability for Randy to use Lightning on top of all his existing access granted in his profile.
-                1. User | Randy Realtor | Permission Set Assignments | Edit Assignment | Move **Lightning Experience User** to the Enabled Permission Sets column | Save 
+    1. Setup | Manage Users | Users | **Randy Realtor**
+        1. Your end user, Randy Realtor has the Dreamhouse User custom profile assigned. Take a look at the profile and check if it has Lightning Experience enabled. 
+        2. User detail page | Profile | **Dreamhouse User**
+        3. Scroll down the profile detail page to the administrative permissions section and notice that Lightning Experience is not checked. This means that when you enable Lightning Experience for your org, **Randy will only see the Lightning Experience if he is assigned a profile or permission set with the Lightning Experience permission enabled.**
+        4. Since Randy does not have access to Lightning with his custom profile, we can assign him the Lightning Experience permission set. This allows us to grant Randy access to Lightning in a controlled rollout without modifying his custom profile. This is layering the ability for Randy to use Lightning on top of all his existing access granted in his profile.
+            1. User | Randy Realtor | Permission Set Assignments | Edit Assignment | Move **Lightning Experience User** to the Enabled Permission Sets column | Save 
 
 ### Enable Lightning Experience for your Salesforce Environment
 
