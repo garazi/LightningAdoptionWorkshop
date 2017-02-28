@@ -10,9 +10,9 @@ Before we roll out Lightning for our end users and start building apps, let's ta
         1. Setup | Lightning Experience | Preview Your Org In Lightning Experience | **Preview** 
         2. Click around your environment in Lightning Experience.Use this Lightning preview to see what your Salesforce apps will look like in Lighting.     
     ![screenshot](http://g.recordit.co/NUS9dJkOCe.gif)
-            1.  Click on the **Opportunities tab**
-            2. Select the **All Opportunities** list view, then click into the **Burlington Textiles Opportunity Record**
-            3. Click around the opportunity  page a bit to explore the look and feel of Lightning, use the Sales Path to change the Opportunity Stage to Value Proposition 
+                1.  Click on the **Opportunities tab**
+                2. Select the **All Opportunities** list view, then click into the **Burlington Textiles Opportunity Record**
+                3. Click around the opportunity  page a bit to explore the look and feel of Lightning, use the Sales Path to change the Opportunity Stage to Value Proposition 
         3. **Exit and Return to Migration Assistant**
     2. **Review your Lightning Readiness Report.** The Lightning Experience Readiness Report helps Admins learn more about what they need to consider as they turn on Lightning. Additionally, based upon what functionality your org currently uses, the Readiness Report will contain recommendations on what you should do next. Keep in mind that your Lightning Experience Readiness Report won’t identify all of the unsupported features and customizations in Lightning Experience, but it will help give you a sense of how ready your unique org is for Lightning.
         1. Setup | Lightning Experience | Check Your Lightning Experience Readiness | **Evaluate**  | Allow | Got It 
