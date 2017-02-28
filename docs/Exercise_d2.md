@@ -8,7 +8,7 @@ Before we roll out Lightning for our end users and start building apps, let's ta
 1. Learn about Lightning, Enable Lightning for your org and define Lightning access for users 
     1. Preview what your org will look like in Lightning Experience
         1. Setup | Lightning Experience | Preview Your Org In Lightning Experience | **Preview** 
-        2. Click around your environment in Lightning Experience.Use this Lightning preview to see what your Salesforce apps will look like in Lighting.     
+        2. Click around your environment in Lightning Experience.Use this Lightning preview to see what your Salesforce apps will look like in Lighting. ![screenshot](http://g.recordit.co/NUS9dJkOCe.gif)    
             1.  Click on the **Opportunities tab**
             2. Select the **All Opportunities** list view, then click into the **Burlington Textiles Opportunity Record**
             3. Click around the opportunity  page a bit to explore the look and feel of Lightning, use the Sales Path to change the Opportunity Stage to Value Proposition 
@@ -28,11 +28,11 @@ Now that we've explored the Lightning look and feel, let's go ahead and grant ac
         3. License: —None--
         4. **Save**
 2. On the permission set page for Lightning Experience user, edit to add the Lightning permission set
-        1. You should already be on the Lightning Experience user permission set page. If not, select the Lightning Experience permission set from the permission sets page. System Section | Click **System Permissions**
-        2. **Edit**
-        3. Check box for: **Lightning Experience User**
-        4. **Save**
-    3. Now that you have created a Permission set, this is a good time to review who will have access to Lightning when you enable it!
+    1. You should already be on the Lightning Experience user permission set page. If not, select the Lightning Experience permission set from the permission sets page. System Section | Click **System Permissions**
+    2. **Edit**
+    3. Check box for: **Lightning Experience User**
+    4. **Save**
+3. Now that you have created a Permission set, this is a good time to review who will have access to Lightning when you enable it!
         1. Setup | Manage Users | Users | **Randy Realtor**
             1. Your end user, Randy Realtor has the Dreamhouse User custom profile assigned. Take a look at the profile and check if it has Lightning Experience enabled. 
             2. User detail page | Profile | **Dreamhouse User**
