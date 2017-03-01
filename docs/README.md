@@ -1,5 +1,3 @@
-# Lightning Adoption Workshop
-
 ## Declarative Exercises
 
 Using clicks, we will enable your org for Lightning and go through the phases of making a Classic Custom App available to your Lightning Users. In these exercises you will learn core Lighting features for your end users, Lightning App development, Record and Home page customizations, standard component usage, and how to assign experiences based on app and profile.
