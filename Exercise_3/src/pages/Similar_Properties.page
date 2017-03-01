@@ -2,7 +2,7 @@
     <apex:variable var="lightningDesktop" value="{! $User.UIThemeDisplayed == 'Theme4d'}" />  
     <apex:outputPanel rendered="{! !lightningDesktop}">
         <apex:pageBlock >
-            <apex:pageBlockTable value="{! properties }" var="ct" id="leads_list" styleClass="slds-table slds-table--bordered slds-table--cell-buffer">
+            <apex:pageBlockTable value="{! properties }" var="ct" id="leads_list">
                 <apex:column value="{! ct.name}" />
                 <apex:column value="{! ct.beds__c}" />
                 <apex:column value="{! ct.baths__c}" />
