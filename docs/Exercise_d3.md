@@ -19,14 +19,14 @@ Now with just a few clicks you've made your Classic app visible in Lightning. Le
 
 #### Lightning App Launcher
 
-All of your Lightning apps, including your Classic apps that are marked as **Visible in Lightning Experience** can be found in the App Launcher. The App Launcher is also where your users can access all the tabs they have access to, whether or not they are included in a Lightning app. Navigate to your Classic app in Lightning using the App Launcher. http://g.recordit.co/uudDQwK9u0.gif
+All of your Lightning apps, including your Classic apps that are marked as **Visible in Lightning Experience** can be found in the App Launcher. The App Launcher is also where your users can access all the tabs they have access to, whether or not they are included in a Lightning app. Navigate to your Classic app in Lightning using the App Launcher. [screenshot](images/ex3.2.gif)
 
 1. App Launcher | Review the apps that are available, notice that the tabs are available just below the App icons. 
 2. App Launcher | Click into the **Dreamhouse Classic** App block 
 
 #### Chatter
 
-Now that we are in the Lightning view for the Dreamhouse Classic App, lets get oriented to the new experience and navigation, starting with Chatter. http://g.recordit.co/41j8S2dkdG.gif
+Now that we are in the Lightning view for the Dreamhouse Classic App, lets get oriented to the new experience and navigation, starting with Chatter. (images/ex3.4.gif)
 
 1. Chatter Tab
 2. Click on **Company Highlights.** Company Highlights will show trending, new and popular posts from across your organization even if you are not following the related records. 
@@ -40,7 +40,7 @@ Now that we are in the Lightning view for the Dreamhouse Classic App, lets get o
 
 #### Search 
 
-Lightning has expanded Search functionality. When you know which object you want to search, start typing the name of the object in the search box. You have the option to limit your search to that object. This feature works only for your most frequently used objects, objects in the navigation bar, and Chatter. You can search one object at a time. Let's explore Lightning Search http://g.recordit.co/kgtmlpNDwr.gif
+Lightning has expanded Search functionality. When you know which object you want to search, start typing the name of the object in the search box. You have the option to limit your search to that object. This feature works only for your most frequently used objects, objects in the navigation bar, and Chatter. You can search one object at a time. Let's explore Lightning Search (images/ex3.5.gif)
 
 1. Click Search Bar. In Lightning your recent items will now be accessible in a drop down from your global search bar. 
 2. Type “Accounts”.  You will see now see the option to Search the string “Accounts”, search within the tab you are currently on(Chatter), or to define your search to the Account object. 
