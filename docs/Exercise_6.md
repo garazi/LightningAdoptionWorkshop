@@ -5,11 +5,12 @@
 * Understand how to useLightning Components as Quick Actions
 * Add Lightning Components to the Utility Bar
 
-###Step 1 - Add a Lightning Component to the Page
+###Step 1 - Add more Lightning Components to the Page
 
 1. Navigate to a Property Record Detail page.
 2. Click the Setup icon and choose **Edit Page**.
-3. Drag the **Mortgage Calculator Card** component onto the page and place it in the right-hand column.
+3. Drag the **NeighborhoodExplorer**, **Property Map** and **Picture Gallery** components onto the page and place them in the right-hand column.
+4. Explore the components which highlight some of the possibilities with Lightning Components.
 
 ###Step 2 - Add a Lightning Component to the Utility Bar
 1. Click the Setup icon and choose Setup.
