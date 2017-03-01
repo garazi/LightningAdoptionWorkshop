@@ -2,7 +2,7 @@
 
 You will be using this environment in the workshop. My Domain must be deployed in your environment in order to complete the Programmatic exercises. 
 
-1. Sign up for Lightning Adoption Workshop environment **[LINK]**
+1. Sign up for [Lightning Adoption Workshop environment](https://developer.salesforce.com/promotions/orgs/lightningnow/)
 2. When you receive your Signup confirmation email, Login to your new org and set your password. 
 3. Define your Domain name in your Lightning Adoption Workshop Org
 	1. From Setup, enter My Domain in the `Quick Find` box, then select **My Domain**.
