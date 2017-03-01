@@ -52,9 +52,8 @@ Now you can select the items to be included in the Console App. Tabs that are ti
         4. Calendar
         5. Properties
         6. Brokers
-        7. Notes
-        8. Dashboards
-        9. Reports
+        7. Dashboards
+        8. Reports
     2. Next
 2. Assign to User Profiles:
     1. Update Selected Profiles Column to include: 
