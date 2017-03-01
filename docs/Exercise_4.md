@@ -59,7 +59,8 @@
     		}
     ```
 3. Add a reference to the Apex Class in HelloWorld.cmp by adding `controller="UserSelect"` to the `<aura:component>` tag.
-4. Add a handler to fire when the component is initialized on the page, by adding the following after the opening `<apex:component> tag:
+4. Add a handler to fire when the component is initialized on the page, by adding the following after the opening `<apex:component>` tag:
+
 	```html
 		<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
 	```
@@ -86,4 +87,4 @@
 6. Save all the files.
 7. Refresh the Property page.
 
-#####On to **[Exercise 5](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_5.md)**
+#####On to **[Exercise 5](Exercise_5.md)**

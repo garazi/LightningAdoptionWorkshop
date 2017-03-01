@@ -34,4 +34,4 @@
 4. (Optional) Follow the instructions from Step 2 to go back and remove the **Similar Properties** section that you created.
 
 
-#####On to **[Exercise 4](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_4.md)**
+#####On to **[Exercise 4](Exercise_4.md)**

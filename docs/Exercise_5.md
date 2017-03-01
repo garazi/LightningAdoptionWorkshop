@@ -534,4 +534,4 @@
 18. If you have issues, the source code for all of the pieces of the component can be [found here](https://github.com/garazi/LightningAdoptionWorkshop/tree/master/Exercise_5/src/aura/SimilarProperties).
 
 
-On to **[Exercise 6](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_6.md)**
+On to **[Exercise 6](Exercise_6.md)**
