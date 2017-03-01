@@ -513,7 +513,7 @@
 
 	```html
 	<aura:attribute name="selectedRecordId" type="Id" />
-   <aura:attribute name="selectedProperty" type="Property__c" />
+   	<aura:attribute name="selectedProperty" type="Property__c" />
 	```
 
 12. Add a new line after **line 13** and add:
@@ -531,7 +531,7 @@
 15. Save the file.
 16. Reload the Property Record Detail page.
 17. Click on the Edit pencil icon in the component and modify the price of the record to be +/- more than 100000, then click Save. If all has gone well, you should see the component update and the property that you edited disappear from the list.
-18. If you have issues, the source code for all of the pieces of the component can be [found here](https://github.com/garazi/LightningAdoptionWorkshop/tree/master/Exercise_5/src/aura/SimilarProperties).
+18. If you have issues, the source code for all of the pieces of the component can be [found here](https://github.com/garazi/LightningAdoptionWorkshop/tree/master/Exercise_5/src/aura/SimilarProperties), or if you are really tired of coding, drag the **BK Properties** component onto the page in App Builder.
 
 
 On to **[Exercise 6](Exercise_6.md)**
