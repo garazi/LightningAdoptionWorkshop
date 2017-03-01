@@ -203,4 +203,4 @@
 5. If, for some reason, you were unsuccessful with the exercise delete the entire contents of the page, and replace it with the contents (Select All / Copy) of [this page](https://raw.githubusercontent.com/garazi/LightningAdoptionWorkshop/master/Exercise_2/src/pages/DreamhouseLeads.page).
 
 
-##### On to **[Exercise 3](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_3.md)**
+##### On to **[Exercise 3](Exercise_3.md)**
