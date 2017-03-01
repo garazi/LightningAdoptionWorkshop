@@ -2,7 +2,7 @@
 
 ## Declarative Exercises
 
-###### Using clicks, we will enable your org for Lightning and go through the phases of making a Classic Custom App available to your Lightning Users. In these exercises you will learn core Lighting features for your end users, Lightning App development, Record and Home page customizations, standard component usage, and how to assign experiences based on app and profile.
+Using clicks, we will enable your org for Lightning and go through the phases of making a Classic Custom App available to your Lightning Users. In these exercises you will learn core Lighting features for your end users, Lightning App development, Record and Home page customizations, standard component usage, and how to assign experiences based on app and profile.
 
 **[Exercise 1](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_d1.md)** - Setup your Salesforce Org
 
@@ -16,7 +16,7 @@
 
 ## Programmatic Exercises
 
-###### The Programmatic Exercises begin by walking you through the process of moving a Visualforce page into Lightning Experience, tackling styling updates to make the page look like it belongs in Lightning Experience. You'll also learn how to use a Visualforce page as a "piece" of a customized Lightning Record page. Finally, you'll learn the basics of building a Lightning Component, then move on to building a Lightning Component to replace the functionality of the embedded Visualforce page.
+The Programmatic Exercises begin by walking you through the process of moving a Visualforce page into Lightning Experience, tackling styling updates to make the page look like it belongs in Lightning Experience. You'll also learn how to use a Visualforce page as a "piece" of a customized Lightning Record page. Finally, you'll learn the basics of building a Lightning Component, then move on to building a Lightning Component to replace the functionality of the embedded Visualforce page.
 
 **[Exercise 1](https://github.com/garazi/LightningAdoptionWorkshop/blob/master/docs/Exercise_1.md)** - Styling a Visualforce page for Lightning Experience
 
