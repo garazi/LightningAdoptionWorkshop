@@ -59,7 +59,7 @@
     		}
     ```
 3. Add a reference to the Apex Class in HelloWorld.cmp by adding `controller="UserSelect"` to the `<aura:component>` tag.
-4. Add a handler to fire when the component is initialized on the page, by adding the following after the opening `<apex:component> tag:
+4. Add a handler to fire when the component is initialized on the page, by adding the following after the opening `<apex:component>` tag:
 	```html
 		<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
 	```
