@@ -7,7 +7,7 @@
 
 This workshop is divided into two sections, Declarative and Programmatic. In order to complete the Programmatic section, you must first complete the Declarative exercises.
 
-###[**Let's get started!**](/docs/README.md)
+### [**Let's get started!**](docs/README.md)
 
 ##### Additional Resources
 
