@@ -45,17 +45,17 @@ The utility bar gives your users quick access to common productivity tools, like
 Now you can select the items to be included in the Console App. Tabs that are tied to Lightning features like Notes and Calendar are only available when you are creating or editing a Lightning App. So we are able to add additional elements to this app that we could not add earlier to our Classic App. 
 
 1. Select Items: 
-        1. Update Selected Items Column to include: 
-            1. Home
-            2. Chatter
-            3. Groups
-            4. Calendar
-            5. Properties
-            6. Brokers
-            7. Notes
-            8. Dashboards
-            9. Reports
-        2. Next
+    1. Update Selected Items Column to include: 
+        1. Home
+        2. Chatter
+        3. Groups
+        4. Calendar
+        5. Properties
+        6. Brokers
+        7. Notes
+        8. Dashboards
+        9. Reports
+    2. Next
 2. Assign to User Profiles:
     1. Update Selected Profiles Column to include: 
         1. Dreamhouse User
