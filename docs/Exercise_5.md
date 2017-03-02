@@ -219,7 +219,7 @@
 2. Save the file, and reload the Property Record Detail page.
 
 ###Step 9 - Adding an Icon
-1. In the Developer Console, click on the Design tile on the right-hand side of the window.
+1. In the Developer Console, click on the SVG tile on the right-hand side of the window.
 2. In a new browser tab, navigate back to the [SLDS site](http://getslds.com).
 3. Navigate to the Icons section of the site.
 4. Scroll down to locate custom85 in the Custom section of icons.
