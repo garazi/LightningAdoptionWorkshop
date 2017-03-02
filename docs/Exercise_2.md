@@ -66,7 +66,7 @@
 
 ###Step 2 - Explore the Salesforce Lightning Design System
 
-1. Add a new line after the `<apex:outputPanel>` and before `</apex:page>` tags at the bottom of the page.
+1. Add a new line after the `</apex:outputPanel>` and before `</apex:page>` tags at the bottom of the page.
 2. Paste the following on the new line:
 
 	```html

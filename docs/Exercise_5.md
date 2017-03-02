@@ -509,14 +509,14 @@
 	```
 9. Save the Controller file.
 10. Switch back to the **SimilarProperties** component markup.
-11. Add a new line after **line 5** and paste the following:
+11. Add a new line after **line 5** (or whatever line is your last `<aura:attribute>`) and paste the following:
 
 	```html
 	<aura:attribute name="selectedRecordId" type="Id" />
    	<aura:attribute name="selectedProperty" type="Property__c" />
 	```
 
-12. Add a new line after **line 13** and add:
+12. Add a new line after **line 13** (or after the closing `>` of the `force:recordPreview` tag, if your line numbers differ) and add:
 
 	```html
 	<force:recordPreview aura:id="editRecord"
