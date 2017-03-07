@@ -36,7 +36,7 @@
 2. Save the component.
 3. Switch back to a Property Record Detail page, click the Setup menu and choose **Edit Page**.
 4. Click the **Hello World** component from the previous exercise and delete it from the page.
-5. Locate the new **SimilarProperties** component in the Component List and drag it onto the page at the top of the right-hand column. Don't worry that nothing appears on the page - we will solve that in the next step.
+5. Locate the new **SimilarProperties** component in the Component List and drag it onto the page at the top of the right-hand column. Don't worry that no data appears on the page - we will solve that in the next step.
 6. Click **Save** and then click the Back button to return to the Property Record Detail page.
 
 ###Step 3 - Creating a controller
