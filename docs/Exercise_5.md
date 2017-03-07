@@ -20,13 +20,17 @@
 	```html
 	<aura:attribute name="recordId" type="Id" />
 	<aura:attribute name="similarProperties" type="Object[]" />
-	<ul class="slds-list--vertical slds-has-dividers--top-space">
-		<aura:iteration items="{!v.similarProperties}" var="item" indexVar="i">
-        <li class="slds-list__item">                   
-            {!item.Name}
-        </li>
-        </aura:iteration>
-    </ul>
+	<lightning:card iconName="custom:custom85" title="Similar Properties">
+		<div class="slds-p-left--medium slds-p-right--medium">
+		<ul class="slds-list--vertical slds-has-dividers--top-space">
+			<aura:iteration items="{!v.similarProperties}" var="item" indexVar="i">
+				<li class="slds-list__item">                   
+				    {!item.Name}
+				</li>
+			</aura:iteration>
+	    	</ul>
+		</div>
+   	</lightning:card>
 	```
 		
 2. Save the component.
@@ -205,20 +209,7 @@
 	})
 	```
 
-###Step 8 - Final Cosmetic Touches
-1. Wrap the outermost `<ul>` (probably line 5, ending on line 31 -- prior to pasting) with:
-
-```html
-	<lightning:card iconName="custom:custom85" title="Similar Properties">
-   		<div class="slds-p-left--medium slds-p-right--medium">
-   			*** THE CURRENT CONTENTS ARE HERE ***
-   		</div>
-   	</lightning:card>
-```
-
-2. Save the file, and reload the Property Record Detail page.
-
-###Step 9 - Adding an Icon
+###Step 8 - Adding an Icon
 1. In the Developer Console, click on the SVG tile on the right-hand side of the window.
 2. In a new browser tab, navigate back to the [SLDS site](http://getslds.com).
 3. Navigate to the Icons section of the site.
@@ -250,7 +241,7 @@
 
 15. Save the file.
 
-###Step 10 - Adding Design Parameters
+###Step 9 - Adding Design Parameters
 1. On the Property Record Detail page, click the Setup icon and choose **Edit Page**.
 2. Click on the SimilarProperties component on the page and **delete it**.
 3. Click the Save button and then navigate back to the Property Record Detail page.
@@ -282,7 +273,7 @@
 13. Switch the search criteria to **Price** and notice that nothing happens. That's because we now need to update our component and Apex Class to handle the switch of criteria.
 14. Click **Save**, then navigate back to the Property Record Detail page.
 
-###Step 11 - Updating the Controllers to Handle the New Search Criteria
+###Step 10 - Updating the Controllers to Handle the New Search Criteria
 1. Switch back to the Dev Console and open the **SimilarProperties** controller.
 2. Add a new line after the `var recId` line of code on line 3 and paste:
 
@@ -341,7 +332,7 @@
 7. Save the file.
 8. Refresh the Property Record Detail page. Notice the properties change. 
 
-###Step 12 - Leverage force:recordPreview to Bind the Data
+###Step 11 - Leverage force:recordPreview to Bind the Data
 1. In the Developer Console, switch to the **SimilarProperties** component markup.
 2. Add a new line following the last `<aura:attribute>` on line 4 and paste:
 
@@ -434,7 +425,7 @@
 14. Change the Price of the Record to be +/- more than 100000.
 15. Click Save and watch the Similar Properties component update.
 
-###Step 13 - Add a Custom Edit View
+###Step 12 - Add a Custom Edit View
 1. In the Dev Console, switch back to the **SimilarProperties** component markup.
 2. Add a new line at the bottom of the document between the `</lightning:card>` and `</aura:component>` tags and paste:
 
