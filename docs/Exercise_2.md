@@ -76,7 +76,7 @@
             <apex:form >
                 <div class="slds-page-header">
                     <div class="slds-grid">
-                    	  <!-- Step 2.4 here -->
+                    	  <!-- Step 2.5 here -->
                     	  
                     </div>
                 </div>
@@ -88,7 +88,7 @@
 	```
 3. Navigate to the [Salesforce Lightning Design System](http://getslds.com) site.
 4. Open the Components section and find the Page Headers section.
-5. Paste the following code, which is a piece of the Page Headers component from Salesforce Lightning Design System, inside the `<div class="slds-grid">` on the blank line after the comment `<!-- Step 2.4 here -->`:
+5. Paste the following code, which is a piece of the Page Headers component from Salesforce Lightning Design System, inside the `<div class="slds-grid">` on the blank line after the comment `<!-- Step 2.5 here -->`:
 
 	```html
 	<div class="slds-col slds-has-flexi-truncate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
