@@ -12,11 +12,5 @@
             component.set("v.similarProperties", res);
         });
         $A.enqueueAction(action);
-    },
-    showHideModal : function(component) {
-        var modal = component.find("editDialog");
-        $A.util.toggleClass(modal, 'slds-hide');
-        var overlay = component.find("overlay");
-        $A.util.toggleClass(overlay, 'slds-hide');
     }
 })

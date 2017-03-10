@@ -245,12 +245,6 @@
 1. On the Property Record Detail page, click the Setup icon and choose **Edit Page**.
 2. Click on the SimilarProperties component on the page and **delete it**.
 3. Click the Save button and then navigate back to the Property Record Detail page.
-4. In the SimilarProperties component markup in the Developer Console, make a new line between lines 3 and 4 following the last `<aura:attribute>` and paste:
-
-```html
-	<aura:attribute name="searchCriteria" type="String" />
-```
-
 4. Update the **title** attribute of the `<lightning:card>` tag to `title="{! 'Similar Properties by ' + v.searchCriteria}"`.
 5. Save the file.
 6. Click the Design tile on the right-hand side of the window.
@@ -266,8 +260,10 @@
 	```
 
 8. Save the file.
+9. Switch back to the **SimilarProperties.cmp** tab.
+10. Update the **title** attribute of the `<lightning:card>` to `title="{! 'Similar Properties by ' + v.searchCriteria}"`, then save the file.
 9. On the **Property Record Detail page**, click the **Setup icon** and choose **Edit page**.
-10. Notice the icon for your component and it's name now contains a space (this is the label from the design file.
+10. Notice the icon for your component and it's name now contains a space (this is the label from the design file).
 11. Drag the component back into the right-hand column.
 12. Notice the right-hand column now contains design parameters for the search criteria.
 13. Switch the search criteria to **Price** and notice that nothing happens. That's because we now need to update our component and Apex Class to handle the switch of criteria.
@@ -332,197 +328,5 @@
 7. Save the file.
 8. Refresh the Property Record Detail page. Notice the properties change. 
 
-###Step 11 - Leverage force:recordPreview to Bind the Data
-1. In the Developer Console, switch to the **SimilarProperties** component markup.
-2. Add a new line following the last `<aura:attribute>` on line 4 and paste:
 
-	```html
-	<aura:attribute name="property" type="Property__c" />
-	```
-
-3. Make another new line below the `<aura:handler>` (currently line 6) tag and add:
-
-	```html
-	<force:recordPreview aura:id="propertyService"
-                 recordId="{!v.recordId}"
-                 targetRecord="{!v.property}"
-                 recordUpdated="{!c.doSearch}"
-                 layoutType="FULL" /> 
-	```
-
-4. Save the file.
-5. Click on the Helper tile on the right-hand side of the Developer Console.
-6. Select all and delete the default contents of the Helper.
-7. Paste the following into the helper:
-
-	```js
-	({
-		getProps : function(component) {
-			var recId = component.get("v.recordId");
-	        var compValue = component.get("v.searchCriteria");
-	        var action = component.get("c.getSimilarProperties");
-	        action.setParams({
-	            recordId: recId,
-	            searchCriteria: compValue
-	        });
-	        action.setCallback(this, function(response){
-	            var res = response.getReturnValue();
-	            component.set("v.similarProperties", res);
-	        });
-	        $A.enqueueAction(action);
-		}
-	})
-	```
-
-8. Switch to the SimilarProperties controller tab.
-9. Replace the contents of the **doInit** function with:
-
-	```js
-		helper.getProps(component);
-	```
-
-10. Add a new function **doSearch** to the controller (remember the commas to seperate the functions):
-
-	```js
-	doSearch : function (component, event, helper) {
-        helper.getProps(component);
-    }
-	```
-	
-11. Save the file.
-12. In case you aren't sure, or something went wrong, your **SimilarPropertiesController.js** file should now look like:
-
-	```js
-	({
-	    doInit : function(component, event, helper) {
-	        helper.getProps(component);
-	    },
-	    doSearch : function (component, event, helper) {
-	        helper.getProps(component);
-	    },
-	    navToRecord : function (component, event, helper) {
-	        var selectedItem = event.currentTarget;
-	        var recId = selectedItem.dataset.record;
-	        var navEvt = $A.get("e.force:navigateToSObject");
-	        navEvt.setParams({
-	            "recordId": recId
-	        });
-	        navEvt.fire();
-	    },
-	    editRecord : function(component, event, helper) {
-	        var recId = event.getSource().get("v.value");
-	        console.log("rec: ", recId)
-	        var editRecordEvent = $A.get("e.force:editRecord");
-	        editRecordEvent.setParams({
-	            "recordId": recId
-	        });
-	        editRecordEvent.fire(); 
-	    }
-	})
-	```
-	
-13. Reload the Property Record Detail page.
-14. Change the Price of the Record to be +/- more than 100000.
-15. Click Save and watch the Similar Properties component update.
-
-###Step 12 - Add a Custom Edit View
-1. In the Dev Console, switch back to the **SimilarProperties** component markup.
-2. Add a new line at the bottom of the document between the `</lightning:card>` and `</aura:component>` tags and paste:
-
-	```html
-	<div aura:id="editDialog" role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open slds-hide">
-        <div class="slds-modal__container">
-            <div class="slds-modal__header">
-                <button class="slds-button slds-modal__close " title="Close" onclick="{!c.closeButton}">
-                    <lightning:icon iconName="utility:close" variant="bare" ></lightning:icon>
-                    <span class="slds-assistive-text">Close</span>
-                </button>
-                <h2 id="header43" class="slds-text-heading--medium">Edit Record</h2>
-            </div>
-            <div class="slds-modal__content slds-p-around--medium slds-grid slds-wrap slds-grid--align-spread">
-                <lightning:input aura:id="propName" name="propName" label="Property Name" required="true" value="{!v.selectedProperty.Name}" class="slds-size--1-of-1 slds-p-horizontal--x-small" />
-                <lightning:input aura:id="propBeds" name="propBeds" label="Beds" value="{!v.selectedProperty.Beds__c}" class="slds-size--1-of-2 slds-p-horizontal--x-small" />
-                <lightning:input aura:id="propBaths" name="propBaths" label="Baths" value="{!v.selectedProperty.Baths__c}" class="slds-size--1-of-2 slds-p-horizontal--x-small" />
-                <lightning:input aura:id="propPrice" name="propPrice" label="Price" value="{!v.selectedProperty.Price__c}" class="slds-size--1-of-2 slds-p-horizontal--x-small" />
-                <lightning:input aura:id="propStatus" name="propStatus" label="Status" value="{!v.selectedProperty.Status__c}" class="slds-size--1-of-2 slds-p-horizontal--x-small" />
-            </div>
-            <div class="slds-modal__footer">
-                <button class="slds-button slds-button--neutral" onclick="{!c.closeButton}">Cancel</button>
-                <button class="slds-button slds-button--brand" onclick="{!c.saveRecord}">Save</button>
-            </div>
-        </div>
-    </div>
-    <div aura:id="overlay" class="slds-backdrop slds-backdrop--open slds-hide"></div>
-	```
-3. Save the file.
-4. Switch to the **SimilarProperties** helper tab.
-5. Add a comma after the `}` on **line 15** and then tap Return to add a new line. Paste the following:
-
-	```js
-	showHideModal : function(component) {
-        var modal = component.find("editDialog");
-        $A.util.toggleClass(modal, 'slds-hide');
-        var overlay = component.find("overlay");
-        $A.util.toggleClass(overlay, 'slds-hide');
-    }
-	```
-6. Save the Helper file.
-7. Switch to the **SimilarProperties** controller tab.
-8. Add a comma after the `}` on **line 25** and then tap Return to add a new line. Paste the following:
-
-	```js
-	editMini : function(component, event, helper) {
-        var recId = event.getSource().get("v.value");
-        component.set("v.selectedRecordId", recId);
-        var tempRec = component.find("editRecord");
-        tempRec.set("v.recordId", component.get("v.selectedRecordId"));
-        tempRec.reloadRecord();
-        helper.showHideModal(component);
-    },
-    closeButton : function(component,event,helper) {
-        helper.showHideModal(component);
-    },
-    saveRecord : function(component,event,helper) {
-        var propName = component.find('propName').get("v.value");
-        var propBeds = component.find('propBeds').get("v.value");
-        var propBaths = component.find('propBaths').get("v.value");
-        var propPrice = component.find('propPrice').get("v.value");
-        var propStatus = component.find('propStatus').get("v.value");
-        var tempRec = component.find("editRecord");
-        tempRec.set("v.Name", propName);
-        tempRec.set("v.Name", propBeds);
-        tempRec.set("v.Name", propBaths);
-        tempRec.set("v.Name", propPrice);
-        tempRec.set("v.Name", propStatus);
-        tempRec.saveRecord();
-        helper.showHideModal(component);
-    }
-	```
-9. Save the Controller file.
-10. Switch back to the **SimilarProperties** component markup.
-11. Add a new line after **line 5** (or whatever line is your last `<aura:attribute>`) and paste the following:
-
-	```html
-	<aura:attribute name="selectedRecordId" type="Id" />
-   	<aura:attribute name="selectedProperty" type="Property__c" />
-	```
-
-12. Add a new line after **line 13** (or after the closing `>` of the `force:recordPreview` tag, if your line numbers differ) and add:
-
-	```html
-	<force:recordPreview aura:id="editRecord"
-		 targetRecord="{!v.selectedProperty}"
-		 recordUpdated="{!c.doSearch}"
-		 layoutType="FULL"
-		 mode="EDIT" />
-	```
-	
-13. Locate the `<lightning:buttonIcon>` on line 31 (unless you have different line numbers!).
-14. Change the `onclick="{!c.editRecord}"` method of the `<lightning:buttonIcon>` to `onclick="{!c.editMini}"`.
-15. Save the file.
-16. Reload the Property Record Detail page.
-17. Click on the Edit pencil icon in the component and modify the price of the record to be +/- more than 100000, then click Save. If all has gone well, you should see the component update and the property that you edited disappear from the list.
-18. If you have issues, the source code for all of the pieces of the component can be [found here](https://github.com/garazi/LightningAdoptionWorkshop/tree/master/Exercise_5/src/aura/SimilarProperties), or if you are really tired of coding, drag the **BK Properties** component onto the page in App Builder.
-
-
-On to **[Exercise 6](Exercise_6.md)**
+On to **[Exercise 5b](Exercise_5b.md)**
