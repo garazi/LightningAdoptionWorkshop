@@ -244,8 +244,13 @@
 ###Step 9 - Adding Design Parameters
 1. On the Property Record Detail page, click the Setup icon and choose **Edit Page**.
 2. Click on the SimilarProperties component on the page and **delete it**.
-3. Click the Save button and then navigate back to the Property Record Detail page.
-4. Update the **title** attribute of the `<lightning:card>` tag to `title="{! 'Similar Properties by ' + v.searchCriteria}"`.
+3. Switch back to the Dev Console and add a new line after **line 3** of the **SimilarProperties.cmp** file.
+4. Paste the following on the new line:
+
+	```html
+	<aura:attribute name="searchCriteria" type="String" />
+	```
+	
 5. Save the file.
 6. Click the Design tile on the right-hand side of the window.
 7. Replace the contents of the file with:
