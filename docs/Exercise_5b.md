@@ -162,7 +162,7 @@
 	    <div aura:id="editDialog" role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal">
 	        <div class="slds-modal__container">
 	            <div class="slds-modal__header">
-	                <button class="slds-button slds-modal__close " title="Close" onclick="{!c.closeDialog}">
+	                <button class="slds-button slds-modal__close " title="Close" onclick="{!c.toggleDialog}">
 	                    <lightning:icon iconName="utility:close" variant="bare" ></lightning:icon>
 	                    <span class="slds-assistive-text">Close</span>
 	                </button>
