@@ -1,18 +1,18 @@
-##Exercise 6 – Using Components Everywhere
+## Exercise 6 – Using Components Everywhere
 
-###Exercise Goals
+### Exercise Goals
 
 * Understand how to useLightning Components as Quick Actions
 * Add Lightning Components to the Utility Bar
 
-###Step 1 - Add more Lightning Components to the Page
+### Step 1 - Add more Lightning Components to the Page
 
 1. Navigate to a Property Record Detail page.
 2. Click the Setup icon and choose **Edit Page**.
 3. Drag the **NeighborhoodExplorer**, **Property Map** and **Picture Gallery** components onto the page and place them in the right-hand column.
 4. Explore the components which highlight some of the possibilities with Lightning Components.
 
-###Step 2 - Add a Lightning Component to the Utility Bar
+### Step 2 - Add a Lightning Component to the Utility Bar
 1. Click the Setup icon and choose Setup.
 2. Click on **Apps** and choose **App Manager**.
 3. Click the Actions dropdown for Dreamhouse Classic Lightning and choose **Edit**.
@@ -21,7 +21,7 @@
 6. Click Save.
 7. Reload the Property Record Detail page to see the Mortgage Calculator in the Utility Bar.
 
-###Step 3 - Make a Lightning Component a Quick Action
+### Step 3 - Make a Lightning Component a Quick Action
 1. In the Dev Console, choose **File > Open Lightning Resources**.
 2. Open the **Mortgage Calculator Card**.
 3. In the component, add `force:lightningQuickActionWithoutHeader` to the **implements** attribute. Don't forget the comma to seperate the values from one another.
