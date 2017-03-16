@@ -1,3 +1,11 @@
+![screenshot](images/LightningTourWorkshopDay.png)
+
+# The Workshop has moved!!! [Head over to its new home...](http://bit.ly/LtngWorkshop2017)
+
+You can stay here, but I won't be updating the files in this location. So, please head on over to the new location.
+
+**Happy Lightning Trails!**
+
 ## Declarative Exercises
 
 Using clicks, we will enable your org for Lightning and go through the phases of making a Classic Custom App available to your Lightning Users. In these exercises you will learn core Lighting features for your end users, Lightning App development, Record and Home page customizations, standard component usage, and how to assign experiences based on app and profile.

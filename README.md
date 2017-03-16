@@ -1,6 +1,14 @@
-# Lightning Adoption Hands-On Exercises 
+![screenshot](docs/images/LightningTourWorkshopDay.png)
 
-## Pre-Work: Complete Trailhead Modules
+# The Workshop has moved!!! [Head over to its new home...](http://bit.ly/LtngWorkshop2017)
+
+You can stay here, but I won't be updating the files in this location. So, please head on over to the new location.
+
+**Happy Lightning Trails!**
+
+## Lightning Adoption Hands-On Exercises 
+
+### Pre-Work: Complete Trailhead Modules
 
 1. Complete the [Lightning Migration Rollout Module](https://trailhead.salesforce.com/modules/lex_migration_rollout) (1hr)
 2. **Extra Credit**: [Migrate to Lightning Experience Trail](https://trailhead.salesforce.com/trail/lex_admin_migration) (6.5hrs) 
